@@ -1,10 +1,32 @@
 # Smart Parking Management System 🚗
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+
 A Python-based Smart Parking Management System that automatically assigns the nearest available parking slot to incoming vehicles, tracks vehicle entry and exit, and calculates parking charges based on duration.
+
+## 📋 Table of Contents
+
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Installation & Setup](#installation--setup)
+- [Project Structure](#project-structure)
+- [How to Use](#how-to-use)
+- [Fee Calculation Logic](#fee-calculation-logic)
+- [Slot Allocation Algorithm](#slot-allocation-algorithm)
+- [Data Storage](#data-storage)
+- [System Features](#system-features)
+- [Evaluation Points (Hackathon Ready)](#evaluation-points-hackathon-ready)
+- [Future Enhancements](#future-enhancements)
+- [Troubleshooting](#troubleshooting)
+- [Contact](#-contact)
 
 ## Features
 
 ### 🎯 Core Features
+
 - **Automatic Slot Allocation**: Greedy algorithm assigns the first available slot
 - **Vehicle Entry Management**: Track vehicle entry with automatic slot assignment
 - **Vehicle Exit Management**: Process exit with automatic fee calculation
@@ -13,6 +35,7 @@ A Python-based Smart Parking Management System that automatically assigns the ne
 - **Analytics Dashboard**: Comprehensive parking analytics with charts
 
 ### 📊 Dashboard Analytics
+
 - Total parking slots overview
 - Occupancy rate visualization
 - Daily vehicle count
@@ -32,22 +55,26 @@ A Python-based Smart Parking Management System that automatically assigns the ne
 ## Installation & Setup
 
 ### Prerequisites
+
 - Python 3.7 or higher
 - pip package manager
 
 ### Installation Steps
 
 1. **Clone/Download the project**
+
    ```bash
    cd "Parking Management"
    ```
 
 2. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Run the application**
+
    ```bash
    streamlit run app.py
    ```
@@ -56,7 +83,7 @@ The application will automatically open in your web browser at `http://localhost
 
 ## Project Structure
 
-```
+```text
 smart_parking_system/
 ├── app.py              # Main application file
 ├── requirements.txt    # Python dependencies
@@ -68,12 +95,14 @@ smart_parking_system/
 ## How to Use
 
 ### 1. Vehicle Entry
+
 - Enter vehicle number (e.g., TN09AB1234)
 - Select entry time (default: current time)
 - Click "Assign Parking Slot"
 - System automatically allocates the nearest available slot
 
 ### 2. Vehicle Exit
+
 - Enter vehicle number
 - Select exit time (default: current time)
 - Click "Process Exit"
@@ -81,12 +110,14 @@ smart_parking_system/
 - Parking slot is freed for next vehicle
 
 ### 3. Slot Status
+
 - View real-time parking slot availability
 - Green (🟢) = Available
 - Red (🔴) = Occupied
 - See detailed slot information in table format
 
 ### 4. Analytics Dashboard
+
 - Monitor occupancy rates
 - Track revenue generation
 - View parking duration statistics
@@ -99,6 +130,7 @@ smart_parking_system/
 **Minimum Charge**: ₹20
 
 **Example**:
+
 - Entry Time: 10:00 AM
 - Exit Time: 12:30 PM
 - Duration: 2.5 hours → 3 hours (rounded up)
@@ -117,7 +149,9 @@ The system uses a **Greedy/First Available Slot Algorithm**:
 ## Data Storage
 
 ### slots.json
+
 Stores real-time parking slot status:
+
 ```json
 {
     "P1": null,        // null = available
@@ -128,7 +162,9 @@ Stores real-time parking slot status:
 ```
 
 ### parking_data.csv
+
 Stores complete vehicle history:
+
 ```csv
 Vehicle,Slot,Entry_Time,Exit_Time,Duration_Hours,Fee
 TN09AB1234,P1,2024-03-08 10:15:00,2024-03-08 12:30:00,2.25,60
@@ -137,18 +173,21 @@ TN09AB1234,P1,2024-03-08 10:15:00,2024-03-08 12:30:00,2.25,60
 ## System Features
 
 ### 🎨 User Interface
+
 - Clean, intuitive web interface
 - Tabbed navigation for different functions
 - Real-time updates without page refresh
 - Responsive design for all screen sizes
 
 ### 📈 Analytics
+
 - Interactive pie charts for occupancy visualization
 - Histogram for parking duration analysis
 - Real-time metrics display
 - Historical data tracking
 
 ### 🔧 System Management
+
 - Automatic data persistence
 - Error handling for edge cases
 - Input validation
@@ -156,11 +195,15 @@ TN09AB1234,P1,2024-03-08 10:15:00,2024-03-08 12:30:00,2.25,60
 
 ## Evaluation Points (Hackathon Ready)
 
-✅ **Real-time slot allocation** - Automatic nearest slot assignment  
-✅ **Automated parking management** - Complete entry/exit workflow  
-✅ **Smart fee calculation** - Duration-based pricing with rounding  
-✅ **Parking analytics dashboard** - Comprehensive metrics and charts  
-✅ **User-friendly web interface** - Modern, intuitive Streamlit UI  
+✅ **Real-time slot allocation** - Automatic nearest slot assignment
+
+✅ **Automated parking management** - Complete entry/exit workflow
+
+✅ **Smart fee calculation** - Duration-based pricing with rounding
+
+✅ **Parking analytics dashboard** - Comprehensive metrics and charts
+
+✅ **User-friendly web interface** - Modern, intuitive Streamlit UI
 
 ## Future Enhancements
 
@@ -183,10 +226,20 @@ TN09AB1234,P1,2024-03-08 10:15:00,2024-03-08 12:30:00,2.25,60
 ### Support
 
 For issues or questions, please check:
+
 1. All dependencies are properly installed
 2. Files have correct permissions
 3. Python version is compatible
 
 ---
 
-**Developed with ❤️ for Smart Parking Solutions**
+## 📞 Contact
+
+### Madhan Mohan Reddy
+
+- 📧 **Gmail**: [madhanmohanreddyperam06@gmail.com](mailto:madhanmohanreddyperam06@gmail.com)
+- 📱 **Mobile**: +91 9110395993
+
+---
+
+***Developed with ❤️ for Smart Parking Solutions***
